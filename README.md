@@ -39,3 +39,28 @@ Strictly Follow:
 
 preserve my identity (@img2) with absolute accuracy; do not alter, regenerate, reinterpret, beautify, stylize, enhance, smooth, reshape, or modify any facial feature including my face shape, jawline, chin, cheeks, forehead, hairline, hairstyle, eyebrows, eyes, nose, lips, ears, skin tone, skin texture, facial proportions, natural asymmetry, age, or distinctive characteristics; the final image must depict the exact same person from the reference photo and remain instantly recognizable at first glance; only adjust lighting, shadows, exposure, color grading, and environmental reflections to match the scene while keeping all facial details unchanged; if there is any conflict between scene realism and identity preservation, always prioritize identity preservation; facial modification strength 0%, identity preservation strength 100%, beautification 0%, stylization 0%, reinterpretation 0%, exact facial likeness required.
 ```
+
+# UPSCALING PROMPT 
+
+```
+identity, face structure, pose, and composition, Perform ultra-high-resolution 8K upscaling with maximum detail enhancement. Add realistic skin texture with visible pores, fine lines, and natural imperfections, avoiding any plastic or artificial smoothing, Enhance facial details including sharp eyes, realistic eyelashes, natural eyebrows, detailed lips, and individual hair strands. Apply professional DSLR camera quality using a full-frame camera look with w premium 85mm or 50mm lens, Improve lighting with a natural key light, soft fill light and subtle rim light to separate the subject from the background. Increase clarity and sharpness naturally without over-sharpening. Balance highlights and shadows with improved dynamic range and true-to-life colors. Reduce noise and compression artifacts while preserving original texture. Apply cinematic yet realistic color grading with accurate skin tones and authentic depth of field. Output should look ultra
+photorealistic, high-end studio quality, DSLR-level","negative prompt":"over-
+smoothed skin, plastic face, cartoon style, anime, painterly look, AI artifacts, distorted face,
+fake skin texture, blur, low detail, harsh sharpening, oversaturation, unrealistic lighting,
+color bleeding, noise artifacts,
+
+"resolution": "7680x4320",
+"quality": "8K",
+"style": "photorealistic, DSLR",
+"detail_level": "maximum",
+"identity_preservation": "strong",
+"reference_image_weight": "high",
+"noise_reduction": "high without texture loss",
+"sharpening": "natural and controlled",
+"lighting": "realistic studio lighting",
+"camera": {
+    "type": "DSLR",
+    "sensor": "full-frame",
+    "lens": "85mm portrait lens",
+    "aperture": "f/1.8"
+}```
