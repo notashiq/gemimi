@@ -1,43 +1,41 @@
 # Face Replacement Prompt
 
-A high-precision face replacement prompt designed for AI image editing models. This prompt focuses on maximum identity preservation during face swaps while maintaining the original scene, lighting, composition, and realism.
+## Usage
+1. Upload the target image as Image 1.
+2. Upload your face reference as Image 2 (`@img2`).
+3. Paste the prompt below exactly as written.
+4. Do not modify the prompt if maximum identity preservation is required.
 
-## Purpose
+## Copy & Paste Prompt
 
-Replace a target character's face with a reference face while preserving the person's exact identity, facial structure, skin texture, proportions, and unique characteristics. The goal is to achieve a seamless and realistic integration without altering the individual's appearance.
+```text
+I have attached two images:
 
-## Key Features
+* Image 1: The target thumbnail containing the character. The character's face is circled for accurate identification.
+* Image 2 (@img2): My face.
 
-* Exact identity preservation
-* No facial reinterpretation or regeneration
-* No beautification or stylization
-* No age modification
-* Natural scene integration
-* Consistent lighting and shadows
-* Original composition preserved
-* Realistic thumbnail and photo editing workflow
+Task:
+Replace only the circled character's face with my face from @img2.
 
-## Best Use Cases
+Important requirements:
 
-* YouTube thumbnail editing
-* Character face replacement
-* Content creator branding
-* Marketing creatives
-* Social media graphics
-* Photo manipulation projects
+* Preserve my exact identity and facial features.
+* Do not change my face shape, jawline, eyes, nose, lips, eyebrows, hairstyle, skin tone, age, or overall appearance.
+* Do not beautify, stylize, age, de-age, or reinterpret my face.
+* Keep my face recognizable as the same person from @img2.
+* Match the facial expression only if necessary to fit the scene.
 
-## Recommended Workflow
+Scene consistency:
 
-1. Upload the target image containing the character.
-2. Upload the identity reference image as `@img2`.
-3. Clearly mark or circle the face to be replaced.
-4. Use the prompt exactly as written.
-5. Generate the result and verify that all facial characteristics remain unchanged.
+* Match the lighting, shadows, color grading, contrast, and mood of the original thumbnail.
+* Blend my face naturally into the scene while preserving my identity.
+* Maintain the original camera angle, head position, perspective, and scale of the character.
+* Keep the character's clothing, body, pose, accessories, background, and all other elements unchanged.
 
-## Expected Output
+Output goal:
+Create a realistic, seamless face replacement that looks like I was originally photographed in that scene, while keeping my identity 100% intact and recognizable.
 
-A realistic face replacement where the person from the reference image appears naturally inside the original scene while remaining instantly recognizable and visually identical to the source photo.
+Strictly Follow:
 
-## Notes
-
-Identity preservation is the highest priority. If scene realism conflicts with facial accuracy, the model should always prioritize preserving the exact identity of the reference person.
+preserve my identity (@img2) with absolute accuracy; do not alter, regenerate, reinterpret, beautify, stylize, enhance, smooth, reshape, or modify any facial feature including my face shape, jawline, chin, cheeks, forehead, hairline, hairstyle, eyebrows, eyes, nose, lips, ears, skin tone, skin texture, facial proportions, natural asymmetry, age, or distinctive characteristics; the final image must depict the exact same person from the reference photo and remain instantly recognizable at first glance; only adjust lighting, shadows, exposure, color grading, and environmental reflections to match the scene while keeping all facial details unchanged; if there is any conflict between scene realism and identity preservation, always prioritize identity preservation; facial modification strength 0%, identity preservation strength 100%, beautification 0%, stylization 0%, reinterpretation 0%, exact facial likeness required.
+```
